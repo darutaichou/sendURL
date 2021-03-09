@@ -1,0 +1,16 @@
+{
+    "name": "Title & URL Sender",
+    "version": "1.0",
+    "description":  "This plugin sends URL into local file",
+
+    "browser_action": {
+        "default_title": "Title & URL Sender",
+        "default_popup": "index.html"
+    },
+
+    "permissions": ["actioveTab"],
+
+    "author": "Ryar",
+
+    "manifest_version": 2
+}
