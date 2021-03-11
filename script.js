@@ -10,5 +10,5 @@ chrome.tabs.getSelected(tab=>{
 
 document.getElementById("send").onclick = function() {
     // ファイルを選択する
-    fileHandle = await window.showOpenFilePicker();
+    fileHandle = await window.chooseFileSystemEntries();
 }
