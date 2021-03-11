@@ -8,7 +8,7 @@
         "default_popup": "index.html"
     },
 
-    "permissions": ["actioveTab"],
+    "permissions": ["activeTab"],
 
     "author": "Ryar",
 
