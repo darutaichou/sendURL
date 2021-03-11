@@ -8,7 +8,12 @@ chrome.tabs.getSelected(tab=>{
     console.log(`URL: ${Data.URL}`);
 })
 
-document.getElementById("send").onclick = function() {
-    // ファイルを選択する
-    fileHandle = await window.chooseFileSystemEntries();
-}
+let handle;
+
+open.addEventListener('click', async () => {
+    try {
+        fileHandle = await window.chooseFileSystemEntries();
+    } catch (err) {
+        console.error(err.message);
+    }
+})
