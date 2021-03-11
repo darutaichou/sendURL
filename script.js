@@ -7,3 +7,12 @@ chrome.tabs.getSelected(tab=>{
     console.log(`Title: ${Data.Title}`);
     console.log(`URL: ${Data.URL}`);
 })
+
+document.getElementById("send").onclick = function() {
+    // ファイルを選択する
+    [fileHandle] = await window.showOpenFilePicker();
+    // ファイルへの書き込み
+    const writable = await fileHandle.createWritable();
+    await writable.write(content);
+    await writable.close();
+}

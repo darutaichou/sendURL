@@ -5,6 +5,7 @@
         <!-- http-equiv="X-UA-Compatible"は指定した互換モードで表示させる -->
         <!-- content="IE=edge"で最新IEを意味する。 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- viewportは画面のこと。デバイスの大きさに合わせている。 -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
@@ -12,7 +13,7 @@
         <script src="clipboard.min.js"></script>
     </head>
     <body>
-        <h1>Title & URL Picker</h1>
+        <h1>Title & URL Sender</h1>
         <button class="ttl">Get Title</button>
         <button class="url">Get URL</button>
         <button class="bmark">Get Both with Markdown</button>
@@ -20,7 +21,7 @@
         <input type="text" readonly id="result">
         <!-- #resultで↑のidが指定されている -->
         <!-- data-clipboard-actionはcopyかcut。デフォルトはcopy -->
-        <button class="copy" data-clipboard-target="#result" data-clipboard-action="copy"><i class="far fa-copy"></i></button>
+        <button class="send"><i class="far fa-copy"></i></button>
         <div class="msg">
             <p class="copied">Copied!</p>
             <p class="failed">failed...</p>
