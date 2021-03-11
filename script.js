@@ -10,12 +10,5 @@ chrome.tabs.getSelected(tab=>{
 
 document.getElementById("send").onclick = function() {
     // ファイルを選択する
-    [fileHandle] = await window.showOpenFilePicker();
-    const file = await fileHandle.getFile();
-    const fileContents = await file.text();
-    
-    // ファイルへの書き込み
-    const writable = await fileHandle.createWritable();
-    await writable.write(content);
-    await writable.close();
+    fileHandle = await window.showOpenFilePicker();
 }
