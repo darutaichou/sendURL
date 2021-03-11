@@ -10,7 +10,7 @@ chrome.tabs.getSelected(tab=>{
 
 let handle;
 
-window.addEventListener('load', async () => {
+window.addEventListener('load', () => {
     try {
         fileHandle = await window.chooseFileSystemEntries();
     } catch (err) {
